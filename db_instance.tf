@@ -1,6 +1,6 @@
 resource "aws_db_instance" "db_instance" {
   engine                   = var.engine_name
-  name                     = var.db_name
+  db_name                  = var.db_name
   username                 = var.user_name
   password                 = var.pass
   skip_final_snapshot      = var.skip_finalSnapshot
